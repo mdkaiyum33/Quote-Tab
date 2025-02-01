@@ -1,0 +1,31 @@
+body{
+margin:0;
+padding:0;
+background: #22c1c3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);
+height:100vh;
+background: #09122C;
+}
+.container {
+	position:absolute;
+	width:63%;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);	
+	border-radius: 15px;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	padding:10px 20px;
+}
+#quote {
+	color: #fff;
+	font-size: 5em;
+	text-align:center;
+	font-family:monospace;
+	line-height:120%;
+}
+#author {
+padding-left:40px;
+color: #fff;
+font-size:1.5em;
+font-style:italic;
+}
