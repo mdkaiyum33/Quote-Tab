@@ -1,0 +1,11 @@
+#!/bin/bash
+quote="$1"
+author="$2"
+if [[ -z "$quote" || -z "$author" ]]; then exit 0; fi
+file="quotes.json"
+quote=$(echo "$quote" | sed 's/"/\\"/g')
+author=$(echo "$author" | sed 's/"/\\"/g')
+new_entry=",{\"quote\":\"$quote\", \"author\":\"$author\"}"
+sed -i 's/\]//g' "$file"
+echo "$new_entry" >> "$file"
+echo "]" >> "$file"
